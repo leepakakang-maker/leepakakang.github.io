@@ -1,10 +1,61 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ko">
 <head>
-  <title>내 사이트</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>흔적 | 홈</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Noto Serif KR',serif;background:#0f0f0f;color:#f5f5f5}
+header{padding:120px 20px;text-align:center;background:linear-gradient(135deg,#111,#1a1a1a)}
+h1{margin:0;font-size:64px;letter-spacing:10px}
+p{opacity:.75;line-height:1.7}
+.nav{display:flex;gap:18px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.nav a{color:#f5f5f5;text-decoration:none;opacity:.85;border-bottom:1px solid transparent;padding:6px 2px}
+.nav a:hover{opacity:1;border-bottom-color:#f5f5f5}
+.section{max-width:1100px;margin:auto;padding:80px 20px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:34px}
+.card{background:#1a1a1a;padding:34px;border-radius:12px;transition:.25s}
+.card:hover{background:#222;transform:translateY(-4px)}
+.btn{display:inline-block;margin-top:28px;padding:12px 26px;background:#fff;color:#000;border-radius:999px;text-decoration:none;font-weight:700}
+.btn:hover{background:#d9d9d9}
+footer{padding:40px 20px;text-align:center;background:#111;opacity:.65;font-size:14px}
+.small{font-size:14px;opacity:.7}
+</style>
 </head>
 <body>
-  <h1>안녕하세요</h1>
-  <p>깃허브 무료 사이트 성공 😎</p>
+<header>
+  <h1>흔 적</h1>
+  <p>Leave Your Mark.</p>
+  <div class="nav">
+    <a href="index.html">HOME</a>
+    <a href="brand.html">BRAND</a>
+    <a href="franchise.html">FRANCHISE</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+</header>
+
+<section class="section">
+  <h2>한 줄로 말하면</h2>
+  <p>흔적은 “의미 + 안전 + 표준화”로 완성하는 타투 프랜차이즈 브랜드입니다.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Minimal Line</h3>
+      <p class="small">첫 타투 시장을 위한 미니멀 시그니처.</p>
+    </div>
+    <div class="card">
+      <h3>Memory Edition</h3>
+      <p class="small">사연을 상징으로 번역하는 스토리 디자인.</p>
+    </div>
+    <div class="card">
+      <h3>Cover & Rework</h3>
+      <p class="small">후회를 정리하는 커버업/리워크 프로그램.</p>
+    </div>
+  </div>
+
+  <a class="btn" href="franchise.html">가맹 안내 보기</a>
+</section>
+
+<footer>© 2026 흔적 Tattoo Franchise. All Rights Reserved.</footer>
 </body>
 </html>
